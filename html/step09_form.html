@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step09_form.html</title>
+</head>
+<body>
+    <h1>폼 요소 작성하기</h1>
+    <form action="login.jsp">
+        <label for="email">이메일</label>
+        <!--여기에 무엇을 입력하면 되는지 알려주는 기능  
+            label for = input id 속성이 같아야 함-->
+        <input type="text" id="email" name="email">
+        <!--문자열을 입력 할수 있는 창
+            input type="text" 문자가 보이게-->
+        <label for="pwd">비밀번호</label>
+        <input type="password" id="pwd" name="pwd">
+        <!--input type="password" 문자가 안보이게-->
+        <button type="submit">로그인</button>
+        <!--버튼을 누를수 있는 기능/서버와 연결-->
+    </form>
+</body>
+</html>
