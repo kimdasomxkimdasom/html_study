@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step10_anchor2.html</title>
+    <style>
+        .container{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .spacer{
+            height: 500px;
+            background-color: rgb(235, 227, 144);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        alert('페이지가 로딩중....잠시만 기다려주세요....');
+    </script>
+    <div class="container"> <!--가운데 정렬 되는 컨테이너 안-->
+        <h1>anchor의 다른 기능</h1>
+        <h3>책갈피 이동</h3>
+        <ul>
+            <li><a href="#one">one</a></li>
+            <li><a href="#two">two</a></li>
+            <li><a href="#three">three</a></li>
+            <!--a기능에 자바스크립트 기능도 넣을 수 있음-->
+            <li><a href="javascript:alert('Have a good day');">눌러보셈</a></li>
+            <!--모바일 기기에서 테스트 가능한 기능-->
+            <li><a href="tel:010-1111-2222">전화 걸기</a></li>
+            <li><a href="MAIL to 123@gmail.com">이메일 쓰기</a></li>
+        </ul>
+        <div class="spacer"></div>
+        <p id="one">one입니다</p>
+        <div class="spacer"></div>
+        <p id="two">two입니다.</p>
+        <div class="spacer"></div>
+        <p id="three">three입니다.</p>
+        <div class="spacer"></div>
+    </div>    
+</body>
+</html>
