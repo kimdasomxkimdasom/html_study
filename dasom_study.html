@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dasom_study.html</title>
+    <style>
+        h1{
+            width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            color: tomato;
+        }
+        a{
+            width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgb(252, 200, 105);
+        }
+        .container{
+            width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>DASOM'S WEB</h1>
+    <a href="https://www.instagram.com/daxxsom/">DASOM'S INSTAGRAM</a>
+    <br><br>
+    <form action="login.jsp">
+        <label for="email">이메일</label>
+        <input type="text" name="email" id="email">
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name">
+        <button type="submit">입력</button>
+    <p>
+        <a href="#one">바로가기)문의를 원하면 클릭해주세요</a>
+    </p>
+    <p style="color: peru;">
+        <strong>GUESS GUESS GUESS GUESS</strong>
+    <p>
+        <fieldset>
+            <legend>제가 거주하는 지역은?</legend>
+            <label>
+                <input type="radio" name="area"> 마천동
+                <input type="radio" name="area"> 송파동
+                <input type="radio" name="area"> 방이동
+                <input type="radio" name="area"> 가락동
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>제가 좋아하는 음식은?</legend>
+            <label>
+                <input type="radio" name="food" id="piza">피자
+                <input type="radio" name="food" id="hbgr">햄버거
+                <input type="radio" name="food" id="pork">삼겹살
+                <input type="radio" name="food" id="kimbab">김밥
+                <input type="radio" name="food" id="blackN">짜장면
+            </label>
+        </fieldset>
+        <br><br>
+        <!--input요소 테스트-->
+        <fieldset>
+            <legend>
+                <strong>궁금한 내용을 검색해보세요</strong>
+            </legend>
+                <input type="search" name="search" id="search">
+                <button type="submit">검색</button>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>
+                <strong>전화번호</strong>
+            </legend>
+                <input type="tel" name="number" id="number"> 
+                <button type="submit">입력</button> 
+        </fieldset>
+        <br><br>
+        <legend>
+            <strong>색상 선택</strong>
+        </legend>
+        <input type="color" name="color" id="color">
+        <br><br>
+        <legend>
+            <strong>생년월일</strong>
+        </legend>
+        <input type="date" name="date" id="date">
+        <button type="submit">입력</button>
+        <br><br>
+        <p id="one">
+        <label for="comment">
+            <strong>궁금한 내용을 입력 해주세요</strong>
+        </label>
+        </p>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    </form>
+    </div>
+</body>
+</html>
