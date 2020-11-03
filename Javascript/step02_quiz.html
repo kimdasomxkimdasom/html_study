@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Quiz.html</title>
+</head>
+<body>
+    <button id="countBtn" onclick="increase();" >0</button>
+    <script>
+        //버튼을 누를때마다 button의 innerText가 1씩 증가되게 해라
+
+        //페이지가 로딩되는 시점에 count값을 0으로 초기화하고
+        var count = 0;
+        //함수가 호출될때 마다
+        function increase(){
+            //count값을 1씩 증가 시키고
+            count=count+1;
+            //버튼의 innerText에 count값이 출력된다.
+            document.querySelector("#countBtn").innerText=count;
+        }           
+    </script>
+</body>
+</html>
