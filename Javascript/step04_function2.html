@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step04_function2.html</title>
+</head>
+<body>
+    <h1>function 테스트중...</h1>
+    <input type="text" id="inputName" placeholder="이름입력...">
+    <button onclick="enter();">입장하기</button>
+    <script>
+
+        function welcome(){
+            alert("구라님 환영합니다.");
+        }
+
+        //함수의 인자를 전달 받을 매개변수 arg 정의하기
+        function welcome2(arg){  //string type data가 arg에 들어가서 함수호출
+            // arg에는 함수를 호출하면서 전달한 값이 들어있다.
+            alert(arg+"님 환영합니다.");
+        }
+
+        function enter(){
+            //1.id가 inputName인 요소에 입력한 문자열 읽어오기 + 변수 값 만들어주기 
+            var a = document.querySelector("#inputName").value; //id는 #붙여서
+            //2.welcom2() 함수를 호출하면서 전달하기
+            welcome2(a);
+            //3.id가 inputName인 요소에 입력한 문자열 지우기
+            //버튼을 누른 후 입력했던 글자가 지워짐 
+            document.querySelector("#inputName").value="";
+            //4. id가 inputName인 요소에 포커스 주기
+            document.querySelector("#inputName").focus();
+        }
+
+    </script>
+</body>
+</html>
