@@ -25,7 +25,7 @@
             //1.id가 inputName인 요소에 입력한 문자열 읽어오기 + 변수 값 만들어주기 
             var a = document.querySelector("#inputName").value; //id는 #붙여서
             //2.welcom2() 함수를 호출하면서 전달하기
-            welcome2(a);
+            welcome2(a); // 아래의 welcom3()함수 도 같은 동작 
             //3.id가 inputName인 요소에 입력한 문자열 지우기
             //버튼을 누른 후 입력했던 글자가 지워짐 
             document.querySelector("#inputName").value="";
@@ -33,6 +33,10 @@
             document.querySelector("#inputName").focus();
         }
 
+        //위와 같은 동작을 하는 함수를 아래와 같이 정의할수도 있다.
+        var welcome3=function(arg){
+            alert(arg+"님 환영합니다.");
+        };
     </script>
 </body>
 </html>
