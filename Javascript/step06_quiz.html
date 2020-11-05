@@ -39,6 +39,12 @@
         function printToList(){
             //배열의 방의 갯수 만큼 li가 만들어져야 한다?
             //for문 안에 만들어야함 !!!!!!!!!!!!!!!!!
+
+            //ul의 자식 요소를 모두 삭제 
+            document.querySelector("#nameList").innerText="";
+            //-->저장된 내용을 ul요소에 출력하기 버튼을 누르면
+            //중복된 값이 나오지 않음! 
+
             for(let i=0; i<names.length; i++){
                 // li를 만들어서
                 let li1 = document.createElement("li");
