@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step04_example.html</title>
+</head>
+<body>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+    <div>div5</div>
+    <button onclick="a();">바꾸기</button>
+    <script>
+        function a(){
+            document.querySelectorAll("div")[0].innerText="hi";
+            document.querySelectorAll("div")[1].innerText="bye";
+            document.querySelectorAll("div")[2].style.color="yellow";
+
+            // var 대신 let 사용
+            let four=document.querySelectorAll("div")[3]; 
+            four.innerText="4번째 div";
+            four.style.color="red";
+        }
+    </script>
+</body>
+</html>
