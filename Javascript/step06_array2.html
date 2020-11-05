@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step06_array2.html</title>
+</head>
+<body>
+    <h1>array type 테스트</h1>
+    <button onclick="printNames();">출력하기</button>
+    <script>
+
+        //반복문
+        for(let i=0; i<=10; i++){
+                    //i<10; 9번까지 
+            console.log(i+" 번째 수행됨")
+        }
+        
+        let names=["김구라","해골","원숭이","주뎅이","덩어리"];      
+        //배열에 저장된 이름을 콘솔창에 하나씩 순서대로 출력 해보세요.
+
+        /*
+        function printNames(){
+            console.log(names[0]);
+            console.log(names[1]);
+            console.log(names[2]);
+            console.log(names[3]);
+            console.log(names[4]);
+        }
+        */
+
+        /*
+        for 이용해서 위와 같은 코드 만들기 (1)
+        function printNames(){
+            for(let i=0; i<5; i++){
+                console.log(names[i])
+            }
+
+            i++ 변수 안에 있는 값을 1씩 증가 시켜라
+        }
+        */
+        
+        //for 이용해서 위와 같은 코드 만들기 (2)
+        function printNames(){
+            for(let i=0; i<names.length; i++){ 
+                console.log(names[i])
+            } //위와 같은 방법(i<names.length)으로 입력을 하면
+             //names에 추가를 해도 for문을 수정 할 필요가 없음
+        }
+
+
+    </script>
+</body>
+</html>

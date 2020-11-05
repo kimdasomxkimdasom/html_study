@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step05_boolean2.html</title>
+</head>
+<body>
+    <h1>boolean type 테스트 중...</h1>
+    <p id=info></p>
+    <script>
+        let isMan=confirm("남자면 확인을 누르세요.")
+        // bodlean type은 문장개념으로 변수명을 만들어 주는게 좋다.
+
+        /*
+
+        남자가 true면 "당신은 남자 이군요!"
+        남자가 false면 "딩신은 여자 이군요!"로 출력해보기
+
+        if(isMan == true){
+            document.querySelector("#info").innerText="당신은 남자 이군요!";
+        }
+        if(isMan == false){
+            document.querySelector("#info").innerText="당신은 여자 이군요!";
+        }
+        
+        */
+
+        //위의 if문은 if~else문으로 바꿀 수 있다.
+        if(isMan==true){
+            document.querySelector("#info").innerText="당신은 남자 이군요!";
+        }else{   //아니면
+            document.querySelector("#info").innerText="당신은 여자 이군요!";
+        } //조건이 두가지이면 if~elst문으로 구성을 할 수 있다.
+
+    </script>
+</body>
+</html>

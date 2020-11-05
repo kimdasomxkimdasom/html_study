@@ -24,11 +24,14 @@
         function enter(){
             //1.id가 inputName인 요소에 입력한 문자열 읽어오기 + 변수 값 만들어주기 
             var a = document.querySelector("#inputName").value; //id는 #붙여서
+
             //2.welcom2() 함수를 호출하면서 전달하기
             welcome2(a); // 아래의 welcom3()함수 도 같은 동작 
+            
             //3.id가 inputName인 요소에 입력한 문자열 지우기
             //버튼을 누른 후 입력했던 글자가 지워짐 
             document.querySelector("#inputName").value="";
+            
             //4. id가 inputName인 요소에 포커스 주기
             document.querySelector("#inputName").focus();
         }

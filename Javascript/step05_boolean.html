@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step05_boolean.html</title>
+</head>
+<body>
+    <h1>boolean type 테스트</h1>
+    <p id="info"></p>
+    <script>
+        let isFirst=confirm("첫 방문이면 확인을 눌러주세요");
+        // web의 confirm 창 에서 확인을 누르면 true값으로 return
+        // 취소를 누르면 false값으로 return
+
+        //web에서 아래의 코드가 isFirst에 true가 들어 있을때만 수행하게 해보기
+        if(isFirst == true){ // if(isFirst) 로 적어도 됨 (트루일때 실행하게 하려면)
+            document.querySelector("#info").innerText="첫 방문을 환영합니다!"
+        }
+        //어떤 코드를 조건부로 실행하고 싶을때 if사용 
+        //false를 선택하면 if를 건너뛰고 값이 실행 
+    </script>
+</body>
+</html>
