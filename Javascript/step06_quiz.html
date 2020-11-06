@@ -9,12 +9,16 @@
     <h1>array 테스트 중...</h1>
     <input type="text" id="inputName" placeholder="이름입력..."/>
     <button onclick="saveToArray();">배열에 저장하기</button>
-    <button onclick="pringToConsole();">저장된 내용을 콘솔에 순서대로 출력하기</button>
+    <button onclick="printToConsole();">저장된 내용을 콘솔에 순서대로 출력하기</button>
     <button onclick="printToList();">저장된 내용을 ul요소에 출력하기</button>
+    <button onclick="printToList2();">저장된 내용을 ul요소에 출력하기2</button>
     <h2>이름 목록 입니다.</h2>
     <ul id="nameList">
 
-    </ul>   
+    </ul>
+    <div id="myDiv">
+
+    </div>   
     <script>
         //입력한 이름을 저장할 예정인 배열(array) 미리 만들어 놓기
             
@@ -24,12 +28,12 @@
         //2. 읽어온 문자열을 배열에 추가하기
 
         function saveToArray() {
-            var name = document.querySelector("#inputName").value;
-        //let 사용해도됨
+            let name = document.querySelector("#inputName").value;
+        //var 사용해도됨
             names.push(name);    
         }
 
-        function pringToConsole(){
+        function printToConsole(){
             for(let i=0; i<names.length; i++){
                 console.log(names[i]);
             }
@@ -54,7 +58,20 @@
                 //원하는 곳에 넣기-->ul요소 안에
                 document.querySelector("#nameList").append(li1);
             }
-        }     
+        }
+            
+        //forEach문 사용 
+        function printToList2(){
+            //ul의 자식 요소를 모두 삭제
+            document.querySelector("#nameList").innerText="";
+
+            names.forEach(function(item){
+                let li1 = document.createElement("li");
+                li1.innerText=item;
+                document.querySelector("#nameList").append(li1);
+            });
+        }
+        //==> 오류가 나는데 이유를 모르겠음 
     </script>
 </body>
 </html>

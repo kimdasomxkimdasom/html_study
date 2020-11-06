@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step07_EventListener.html</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(223, 223, 118);
+            border: 2px solid orangered;
+            /*border;경계선 @px;경계선의 굵기 solid;스타일 색상 */
+        }
+    </style>
+</head>
+<body>
+    <h1>EventListener 테스트</h1>
+    <button onclick="clicked();">눌러보셈</button>
+    <button id="myBtn">눌러보셈2</button>
+    <br><br>
+    <!--id는 하나 만 / class는 여러개를 가질 수 있음-->
+    <div class="box" id="myDiv"></div>
+    <div class="box"></div>
+    <script>
+        function clicked(){
+            alert("버튼을 눌렀네?");
+        }
+                                                //string type "event name"
+        document.querySelector("#myBtn").addEventListener("click",function(){
+                                                            //fucnthin type call back function
+            alert("버튼을 눌렀네?");
+        //"클릭"이벤트가 발생하면 "알림창"함수를 실행시켜주세요 
+        });
+
+        //id가 myDiv인 요소에 "click" 이벤트가 일어나면 호출되는 함수 등록
+        document.querySelector("#myDiv").addEventListener("click",function(){
+                //document.querySelector("#myDiv").innerText="clicked!"; 
+                this.innerText="clicked!";
+                //this가 document.querySelector("#myDiv") 가르킴
+                //event함수안의 this는 event가 일어난 그 요소를 가르킴  
+        });
+
+        /*  내가 한거 (실행이 되긴 됐는데 잘못된듯?)
+        function();{
+            document.querySelector("#myDic").addEventListener("click",function(){
+                document.querySelector("#myDiv").innerText="clicked!"; 
+            });
+        }
+        */ 
+    </script>
+</body>
+</html>
