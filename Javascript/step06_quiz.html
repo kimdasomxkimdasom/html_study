@@ -29,13 +29,13 @@
 
         function saveToArray() {
             let name = document.querySelector("#inputName").value;
-        //var 사용해도됨
             names.push(name);    
         }
+        // array배열로 push되면서 값이 쌓임 
 
         function printToConsole(){
             for(let i=0; i<names.length; i++){
-                console.log(names[i]);
+                console.log(names[i]); 
             }
         }
 
@@ -55,7 +55,7 @@
                 //innerText를 출력하고 
                 li1.innerText=names[i]; //i만큼 
 
-                //원하는 곳에 넣기-->ul요소 안에
+                //append기능으로 원하는 곳에 넣기-->ul요소 안에
                 document.querySelector("#nameList").append(li1);
             }
         }

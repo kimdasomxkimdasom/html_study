@@ -10,23 +10,27 @@
     <input type="text" id="inputName" placeholder="이름입력...">
     <button onclick="enter();">입장하기</button>
     <script>
+        /*
+            개념 이해를 위한 설명
 
         function welcome(){
             alert("구라님 환영합니다.");
         }
 
-        //함수의 인자를 전달 받을 매개변수 arg 정의하기
-        function welcome2(arg){  //string type data가 arg에 들어가서 함수호출
-            // arg에는 함수를 호출하면서 전달한 값이 들어있다.
-            alert(arg+"님 환영합니다.");
+        함수의 인자를 전달 받을 매개변수 arg 정의하기
+        function welcome2(arg){  -->string type data가 arg에 들어가서 함수호출  
+            alert(arg+"님 환영합니다.");  -->arg에는 함수를 호출하면서 전달한 값이 들어있다.
         }
+
+        */
 
         function enter(){
             //1.id가 inputName인 요소에 입력한 문자열 읽어오기 + 변수 값 만들어주기 
-            var a = document.querySelector("#inputName").value; //id는 #붙여서
+            var a = document.querySelector("#inputName").value;
 
             //2.welcom2() 함수를 호출하면서 전달하기
-            welcome2(a); // 아래의 welcom3()함수 도 같은 동작 
+            //welcome2(a); // 아래의 welcom2()함수 도 같은 동작 
+            welcome2(a);
             
             //3.id가 inputName인 요소에 입력한 문자열 지우기
             //버튼을 누른 후 입력했던 글자가 지워짐 
@@ -35,9 +39,14 @@
             //4. id가 inputName인 요소에 포커스 주기
             document.querySelector("#inputName").focus();
         }
-
-        //위와 같은 동작을 하는 함수를 아래와 같이 정의할수도 있다.
-        var welcome3=function(arg){
+            //함수의 인자를 전달 받을 매개변수 arg 정의하기 
+        function welcome(arg){
+            //arg 에는 함수를 호출하면서 전달한 값이 들어 있다. 
+            alert(arg+" 님 환영합니다.");
+        }
+        
+            //위와 같은 동작을 하는 함수를 아래와 같이 정의할수도 있다.
+        var welcome2=function(arg){
             alert(arg+"님 환영합니다.");
         };
     </script>
