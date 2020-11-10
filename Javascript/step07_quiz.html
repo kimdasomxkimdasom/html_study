@@ -56,7 +56,7 @@
         ***위의 문제를 글로벌 영역으로 하였을때 / step04_example 참고
 
         for(let i=0; i<20; i++){
-          < = let i=0; document.querySelectorAll("div").length; i++ 도 가능 > 
+          < = let i=0; i<divs.length; i++ 도 가능 > 
             document.querySelectorAll("div")[i]
             .addEventListener("click",function(){
                 this.innerText="clicked!";
@@ -67,21 +67,6 @@
         // querySelectorAll("div") 개별로 하고싶으면 괄호 뒤에 [위치] 적어주기
         // querySelectorAll("div")[3] 이런식으로 
         // 전체를 적용 할거면 for문 이용해서 querySelectorAll("div")[i]
-
-        
-        ****선생님이 내준 퀴즈 내가 푼 방식 (틀렸음)
-
-        document.querySelector("#oneBox").addEventListener("click",function(){
-        this.innerText="clikcked!"
-        });
-
-        for(let i=0; i<div.length; i++){
-        document.querySelectorAll("div")[i].addEventListener("click",function(){
-        this.innerText="clicked!";
-        //document.querySelectorAll("div").append(this);
-        });
-
-        }
 
         */
         
