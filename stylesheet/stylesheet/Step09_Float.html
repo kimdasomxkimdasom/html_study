@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step09_Float.html</title>
+	<style>
+		.container{
+			width: 500px;
+			margin: 0 auto;
+			border: 1px solid blue;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid red;
+		}
+		#one{ /* float  요소를 떠 있게 만듬. 그래서 다음 요소와 겹치게 됨
+						자기가 필요한 만큼 공간을 차지함 */
+			float: left; /* 왼쪽에 뜨게 */
+		}
+		#two{
+			float: right; /* 오른쪽에 뜨게 */
+		}
+		/* flaot는 좌측/우측 정렬만 가능 중앙 가로 정렬을 원한다면 margin 을 이용 */
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>float 테스트</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem odio commodi, saepe quidem, nobis illo neque repellat, ipsum laboriosam delectus laudantium. Eligendi accusantium odio sint hic, quis aut a autem?</p>
+	<div class="box" id="one">div1</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nemo blanditiis ipsam, voluptates vitae, reprehenderit optio tempore consequatur laborum earum officia repellendus error consequuntur, eos voluptatum perferendis voluptate vel. Placeat.</p>
+	<div class="box" id="two">div2</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure reiciendis, ex odio temporibus ea earum ipsum, a provident enim iusto eum ullam nostrum exercitationem quaerat hic molestiae. Ipsa, repellat, hic.</p>
+</div>
+</body>
+</html>
