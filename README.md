@@ -1,7 +1,6 @@
 # html_study
-### 학원 수업에서 배운 HTML+CSS+JAVASCRIPT기초 및 Git Hub 테스트
+## 학원 수업에서 배운 HTML+CSS+JAVASCRIPT기초 및 Git Hub 테스트
 
-### git hub 
 
 # 대제목
 ## 중제목
